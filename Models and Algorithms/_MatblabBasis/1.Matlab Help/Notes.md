@@ -1,10 +1,10 @@
 # 1. Matlab Help
 
-## 1.help
+## 1.1 help
 
 `help`用于查看特定函数的帮助信息。
 
-### 查询所有基本函数的简介
+### 1.1.1 查询所有基本函数的简介
 
 ```matlab
 help elfun
@@ -12,7 +12,7 @@ help elfun
 
 ![image-20210729150708650](https://images.liumengyang.xyz/image-20210729150708650.png)
 
-### 查询指数函数的详细信息
+### 1.1.2 查询指数函数的详细信息
 
 ```matlab
 help exp
@@ -20,11 +20,11 @@ help exp
 
 ![image-20210729150914302](https://images.liumengyang.xyz/image-20210729150914302.png)
 
-## 2. lookfor
+## 1.2 lookfor
 
 `lookfor`用于查找具有某种功能的函数或指令。
 
-### 查找有关积分的指令
+### 1.2.1 查找有关积分的指令
 
 ```matlab
 lookfor integral
@@ -32,7 +32,7 @@ lookfor integral
 
 ![image-20210729152555523](https://images.liumengyang.xyz/image-20210729152555523.png)
 
-### 查找有关傅里叶变换的指令
+### 1.2.2 查找有关傅里叶变换的指令
 
 ```matlab
 lookfor fourier
@@ -40,11 +40,11 @@ lookfor fourier
 
 ![image-20210729153352610](https://images.liumengyang.xyz/image-20210729153352610.png)
 
-## 3. doc
+## 1.3 doc
 
 `doc`指令用于获取超文本格式的帮助文档。
 
-### 查看doc主页
+### 1.3.1 查看doc主页
 
 ```matlab
 doc
@@ -52,7 +52,7 @@ doc
 
 ![image-20210729153643700](https://images.liumengyang.xyz/image-20210729153643700.png)
 
-### 查询doc指令的文档
+### 1.3.2 查询doc指令的文档
 
 ```matlab
 doc doc
@@ -60,7 +60,7 @@ doc doc
 
 ![image-20210729153720580](https://images.liumengyang.xyz/image-20210729153720580.png)
 
-### 查询eig指令的文档
+### 1.3.3 查询eig指令的文档
 
 ```matlab
 doc eig

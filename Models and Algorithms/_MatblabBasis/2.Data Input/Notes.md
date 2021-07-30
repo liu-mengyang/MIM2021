@@ -1,8 +1,8 @@
 # 2. Data Input
 
-## 1. 矩阵输入
+## 2.1 矩阵输入
 
-### 1. 直接输入
+### 2.1.1 直接输入
 
 ```matlab
 A=[1,2,3;4,5,6;7,8,9]
@@ -12,7 +12,7 @@ A=[1,2,3;4,5,6;7,8,9]
 
 矩阵变量会被保存在工作区，可被重新赋值，或者通过`clear`指令清楚，直到指令窗被关闭它都会一直存在。
 
-### 2. 分行输入
+### 2.1.2 分行输入
 
 ```matlab
 A=[1,2,3
@@ -24,59 +24,59 @@ A=[1,2,3
 
 通过分行输入可以不用通过分号进行矩阵不同行的区分。
 
-## 2. 特殊变量
+## 2.2 特殊变量
 
-### 1. ans
+### 2.2.1 ans
 
 结果的默认变量名。
 
 ![image-20210729162856072](https://images.liumengyang.xyz/image-20210729162856072.png)
 
-### 2. pi
+### 2.2.2 pi
 
 圆周率。
 
 ![image-20210729162909361](https://images.liumengyang.xyz/image-20210729162909361.png)
 
-### 3. eps
+### 2.2.3 eps
 
 浮点相对精度。
 
 ![image-20210729162928245](https://images.liumengyang.xyz/image-20210729162928245.png)
 
-### 4. inf
+### 2.2.4 inf
 
 无穷大。
 
 ![image-20210729162949289](https://images.liumengyang.xyz/image-20210729162949289.png)
 
-### 5. NaN
+### 2.2.5 NaN
 
 不定量（not a number）
 
 ![image-20210729163006850](https://images.liumengyang.xyz/image-20210729163006850.png)
 
-### 6. i(j)
+### 2.2.6 i(j)
 
 单位虚数
 
 ![image-20210729163236516](https://images.liumengyang.xyz/image-20210729163236516.png)
 
-### 7. nargin
+### 2.2.7 nargin
 
 所用函数的输入变量数目。
 
-### 8. nargout
+### 2.2.8 nargout
 
 所用函数的输出变量数目。
 
-### 9. realmin
+### 2.2.9 realmin
 
 最小不可用实数。
 
 ![image-20210729163446113](https://images.liumengyang.xyz/image-20210729163446113.png)
 
-### 10. realmax
+### 2.2.10 realmax
 
 最大不可用实数。
 
@@ -84,9 +84,9 @@ A=[1,2,3
 
 ## 3. 特殊向量和特殊矩阵
 
-### 1. 特殊向量
+### 3.1 特殊向量
 
-#### 1. 固定间隔行向量
+#### 3.1.1 固定间隔行向量
 
 ```matlab
 t=[0:0.1:10]
@@ -94,7 +94,7 @@ t=[0:0.1:10]
 
 ![image-20210729164051479](https://images.liumengyang.xyz/image-20210729164051479.png)
 
-#### 2. 线性均匀分布向量
+#### 3.1.2 线性均匀分布向量
 
 ```matlab
 t=linspace(0,10,20)
@@ -102,7 +102,7 @@ t=linspace(0,10,20)
 
 ![image-20210729164143906](https://images.liumengyang.xyz/image-20210729164143906.png)
 
-#### 3. 按照对数距离等间距向量
+#### 3.1.3 按照对数距离等间距向量
 
 ```matlab
 t=logspace(0,10,30)
@@ -110,9 +110,9 @@ t=logspace(0,10,30)
 
 ![image-20210729164247582](https://images.liumengyang.xyz/image-20210729164247582.png)
 
-### 2. 特殊矩阵
+### 3.2 特殊矩阵
 
-#### 1. 单位矩阵
+#### 3.2.1 单位矩阵
 
 ```matlab
 eye(2)
@@ -126,7 +126,7 @@ eye(2,3)
 
 ![image-20210729164645150](https://images.liumengyang.xyz/image-20210729164645150.png)
 
-#### 2. 全1矩阵
+#### 3.2.2 全1矩阵
 
 ```matlab
 ones(2)
@@ -140,7 +140,7 @@ ones(2,3)
 
 ![image-20210729164806361](https://images.liumengyang.xyz/image-20210729164806361.png)
 
-#### 3. 全0矩阵
+#### 3.2.3 全0矩阵
 
 ```matlab
 zeros(2)
@@ -154,7 +154,7 @@ zeros(2,3)
 
 ![image-20210729164904647](https://images.liumengyang.xyz/image-20210729164904647.png)
 
-#### 4. 空矩阵
+#### 3.2.4 空矩阵
 
 ```matlab
 q=[]
@@ -162,7 +162,7 @@ q=[]
 
 ![image-20210729165139973](https://images.liumengyang.xyz/image-20210729165139973.png)
 
-#### 5. 随机数矩阵
+#### 3.2.5 随机数矩阵
 
 0-1均匀分布
 
@@ -204,7 +204,7 @@ unifrnd(0,1,3,2)
 
 ![image-20210729165712638](https://images.liumengyang.xyz/image-20210729165712638.png)
 
-#### 6. 随机置换
+#### 3.2.6 随机置换
 
 产生1~n的随机全排列
 
