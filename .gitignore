@@ -1,2 +1,8 @@
-# Matlab auto save file
+# Matlab auto save files
 *.asv
+
+# MacOS auto generated files
+*/__MACOSX
+*/.DS_Store
+
+# Latex auto generated files
