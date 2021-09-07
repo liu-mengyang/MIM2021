@@ -6,3 +6,6 @@
 */.DS_Store
 
 # Latex auto generated files
+
+# Jupyter auto save files
+**/.ipynb_checkpoints
