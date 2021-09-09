@@ -5,7 +5,9 @@
 */__MACOSX
 */.DS_Store
 
-# Latex auto generated files
+# Gurobi auto generated files
+gurobi.log
+*.lp
 
 # Jupyter auto save files
 **/.ipynb_checkpoints
