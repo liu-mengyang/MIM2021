@@ -426,7 +426,6 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 
  %%%常量
 
-%\newcommand\gmcm@ges@string@contents{“华为杯”第十五届全国研究生\par 数学建模竞赛}
 \newcommand\gmcm@ges@string@contents{\includegraphics[width=11cm]{title}}
 
 
