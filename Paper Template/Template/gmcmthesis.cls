@@ -132,7 +132,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 %% Document Layout
 % 页面布局
 \geometry{top=30.0mm,bottom=25.0mm,left=31.7mm,right=31.7mm,headsep=8mm}
-\renewcommand*{\baselinestretch}{1}
+\renewcommand*{\baselinestretch}{1} % 单倍行距
 % 修改tabular 环境, 设置表格中的行间距为正文行间距.
 \let\gmcm@oldtabular\tabular
 \let\gmcm@endoldtabular\endtabular
@@ -281,16 +281,16 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
   \def\thepage{0}
   \thispagestyle{empty}%
  \begin{center}
- {\includegraphics[width=\textwidth]{logo}}
+ {\includegraphics{logo}}
  
-  \vskip2.75cm
+  \vskip1.75cm
  {\xinwei\zihao{2} \gmcm@ges@string@contents \par}
  \end{center}
  
- \vskip2cm
+ \vskip2em
  
  % \thispagestyle{gmcmheadings} 
-   \renewcommand\arraystretch{1.58}
+   \renewcommand\arraystretch{1.3}
  \noindent \begin{tabularx}{\textwidth}{lX}
   \zihao{-2}\bfseries 学\qquad 校&\zihao{-2}\bfseries\gmcm@tokens@schoolname\\
   \toprule[1.38pt]\\[-15pt] \\
@@ -309,7 +309,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \def\makenametitle{
 \newpage
 \setcounter{page}{1}
-\vspace*{0.5cm}
+\vspace*{0.3cm}
 \begin{center}
 %{\includegraphics[width=4cm]{logo}}
 
@@ -317,7 +317,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 {\xinwei\zihao{2} \gmcm@ges@string@contents \par}
 \end{center}
 
-\vskip1.6cm%
+\vskip0.6cm%
 
 \begin{center}\begin{tabularx}{.95\textwidth}{@{}lX@{}}
 {\zihao{4} 题\quad 目} &\hfill\zihao{3}\heiti \@title\hfill\null\\
@@ -420,27 +420,27 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \newcommand*{\gmcm@cap@proof}{证明}
 \newcommand*{\gmcm@cap@solution}{解}
  %%%  中文标题名称
-\newcommand*{\gmcm@cap@abstractname}{摘\qquad 要:}
+\newcommand*{\gmcm@cap@abstractname}{摘要}
  %%%  中文关键字
-\newcommand*{\gmcm@cap@keywordsname}{关键词}
+\newcommand*{\gmcm@cap@keywordsname}{关键字}
 
  %%%常量
 
-\newcommand\gmcm@ges@string@contents{\includegraphics[width=11cm]{title}}
+\newcommand\gmcm@ges@string@contents{\includegraphics{title}}
 
 
  
 
 %设置目录格式
 % 节的目录格式
-\titlecontents{section}[0pt]{\vspace{2mm}\songti}
-{\thecontentslabel\hskip.5em}{}{\titlerule*[0.3pc]{.}\contentspage}
+\titlecontents{section}[0pt]{\vspace{2mm}\bfseries\heiti}
+{\thecontentslabel\hskip.5em}{}{\titlerule*[0.5pc]{.}\contentspage}
 % 小节的目录格式
-\titlecontents{subsection}[30pt]{\vspace{2mm}\songti}
-{\thecontentslabel\hskip.5em}{}{\titlerule*[0.3pc]{.}\contentspage}
+\titlecontents{subsection}[30pt]{\songti}
+{\thecontentslabel\hskip.5em}{}{\titlerule*[0.5pc]{.}\contentspage}
 
 \titlecontents{subsubsection}[55pt]{\songti}
-{\thecontentslabel\hskip.5em}{}{\titlerule*[0.3pc]{.}\contentspage}
+{\thecontentslabel\hskip.5em}{}{\titlerule*[0.5pc]{.}\contentspage}
 
 \pagestyle{plain}
 \endinput
